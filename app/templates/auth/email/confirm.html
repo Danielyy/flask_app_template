@@ -1,0 +1,7 @@
+<p>{{ user.username }}：您好！</p>
+<p>欢迎注册<b>立马理财</b>！</p>
+<p>确认您的账户有效性，请<a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击这里</a>.</p>
+<p>或者，您可以复制以下链接，粘贴到浏览器的地址栏中:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>立马理财</p>
+<p><small>Note: replies to this email address are not monitored.</small></p>

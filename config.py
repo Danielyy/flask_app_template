@@ -41,7 +41,7 @@ class MySQLProductionConfig(Config):
     DEBUG = True
     WTF_CSRF_ENABLED = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-                              'mysql://root:yzskynet@127.0.0.1/my_db?charset=utf8'
+                              'mysql://root:password@127.0.0.1/my_db?charset=utf8'
 
 config = {
     'development': DevelopmentConfig,
